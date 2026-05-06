@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Elm and Peg Consulting</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      --trunk-brown:  #4A3E38;
+      --forest-green: #3E5E43;
+      --sage-green:   #597E5D;
+      --paper-cream:  #FAF8F2;
+      --warm-gray:    #EBE8E1;
+      --off-black:    #2B2B2B;
+    }
+
+    html, body {
+      height: 100%;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      background-color: var(--paper-cream);
+      color: var(--off-black);
+      font-family: 'Open Sans', sans-serif;
+    }
+
+    main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 3rem 1.5rem;
+      gap: 1.75rem;
+    }
+
+    .logo {
+      width: min(320px, 60vw);
+      height: auto;
+      display: block;
+    }
+
+    h1 {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      font-size: clamp(1.75rem, 5vw, 3rem);
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--trunk-brown);
+      line-height: 1.15;
+    }
+
+    .blurb {
+      font-size: clamp(1rem, 2.5vw, 1.2rem);
+      color: var(--off-black);
+      max-width: 560px;
+      line-height: 1.65;
+    }
+
+    .contact-btn {
+      display: inline-block;
+      background-color: var(--forest-green);
+      color: #fff;
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 600;
+      font-size: 1rem;
+      text-decoration: none;
+      padding: 0.85rem 2rem;
+      border-radius: 4px;
+      transition: background-color 0.2s ease;
+      max-width: 100%;
+      word-break: break-word;
+    }
+
+    .contact-btn:hover {
+      background-color: var(--sage-green);
+    }
+
+    .contact-btn:focus-visible {
+      background-color: var(--sage-green);
+      outline: 3px solid var(--trunk-brown);
+      outline-offset: 3px;
+    }
+
+    footer {
+      background-color: var(--warm-gray);
+      color: var(--off-black);
+      font-family: 'Open Sans', sans-serif;
+      font-size: 0.85rem;
+      text-align: center;
+      padding: 1.25rem 1.5rem;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <img src="assets/logo.png" alt="Elm and Peg logo" class="logo" />
+    <h1>Elm and Peg Consulting</h1>
+    <p class="blurb">
+      Kristin brings a rich background in Customer Experience and Customer Success
+      to help businesses build lasting relationships and drive meaningful outcomes.
+    </p>
+    <a href="mailto:kristin@elmandpeg.com" class="contact-btn">
+      Contact me at kristin@elmandpeg.com
+    </a>
+  </main>
+
+  <footer>
+    &copy; 2026 Elm and Peg LLC &nbsp;&middot;&nbsp; Made with ❤️ in Powell, OH
+  </footer>
+</body>
+</html>

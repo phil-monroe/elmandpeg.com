@@ -1,0 +1,3 @@
+- logo is at assets/logo.png
+- refer to the DESIGN_GUIDELINES.md for general design guidance.
+- there is a companion assets/design-guidelines.png image for reference as well.
